@@ -6,4 +6,11 @@
         android:icon="@drawable/ic_logout"
         android:title="@string/logout"
         app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_maps"
+        android:icon="@drawable/baseline_map_24"
+        app:showAsAction="ifRoom"
+        android:title="@string/maps" />
+
 </menu>

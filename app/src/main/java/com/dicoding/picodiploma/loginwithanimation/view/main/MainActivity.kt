@@ -22,6 +22,7 @@ import com.dicoding.picodiploma.loginwithanimation.ViewModelFactory
 import com.dicoding.picodiploma.loginwithanimation.view.adStory.AddStoryActivity
 import com.dicoding.picodiploma.loginwithanimation.view.detail.DetailActivity
 import com.dicoding.picodiploma.loginwithanimation.view.login.LoginActivity
+import com.dicoding.picodiploma.loginwithanimation.view.maps.MapsActivity
 import kotlinx.coroutines.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -53,6 +54,13 @@ class MainActivity : AppCompatActivity() {
                                 finish()
                             }
                         }
+                    }
+                    return@setOnMenuItemClickListener true
+                }
+                R.id.action_maps -> {
+                    Intent(this, MapsActivity::class.java).also { intent ->
+                        startActivity(intent)
+                        finish()
                     }
                     return@setOnMenuItemClickListener true
                 }
